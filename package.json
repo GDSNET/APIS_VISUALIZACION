@@ -1,0 +1,25 @@
+{
+  "name": "node-server-notification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js start",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apn": "^2.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "fcm-call": "^2.0.0",
+    "fs": "0.0.1-security",
+    "mssql": "^4.3.0",
+    "multer": "^1.4.1",
+    "nodemon": "^1.18.9",
+    "request": "^2.88.0"
+  }
+}

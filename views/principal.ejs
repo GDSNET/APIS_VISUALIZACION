@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<% include ./head %>
+</head>
+<body class="container">
+
+	<header>
+		<% include ./header %>
+	</header>
+
+	<main>
+		<div class="jumbotron">
+			<h1>Esto es Genial</h1>
+			<p>Bienvenido a ejs</p>
+
+			
+			<ul>
+				<% for(var i=0; i<bodies.length; i++) {%>
+				<button class="btn btn-primary" value="<%= bodies[i].id_tie_dia %>" id="brandName" onclick="multiple(this.value);">
+						<%= bodies[i].id_tie_dia %>
+				</button>
+				   <li><%= bodies[i].id_tie_dia %></li>
+				<% } %>
+			</ul>
+
+
+		</div>
+	</main>
+
+	<footer>
+		<% include ./footer %>
+	</footer>
+	
+</body>
+</html>
