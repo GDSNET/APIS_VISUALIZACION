@@ -149,7 +149,6 @@ querys = "delete from [dbo].[mbl_notification_users] where id_app= "+id_app+" an
 conn.query(querys).then(function (recordset) {
     console.log("cantidad afectada: "+recordset.rowsAffected);
     if (recordset.rowsAffected > 0){
-        
         console.log("1 O MAS FILA ELIMINADA")
         res.json({"usuario":"OK"}); 
         //res.end();
